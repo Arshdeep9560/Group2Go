@@ -1,24 +1,26 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <title>Sign Up</title>
   <link rel="stylesheet" href="signup.css">
 </head>
+
 <body>
 
+ 
   <div class="signup-container">
     <form class="signup-form">
       <h2>Sign Up</h2>
 
       <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
+      <input type="text" id="username" name="username" autocomplete="off">
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" autocomplete="off">
 
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" required>
@@ -26,9 +28,47 @@
       <label for="confirm-password">Confirm Password:</label>
       <input type="password" id="confirm-password" name="confirm-password" required>
 
-      <button type="submit">Sign Up</button>
+      <button type="submit" id="submit">Sign Up</button>
     </form>
   </div>
 
+  <script type="module">
+    
+ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+ import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+ 
+
+
+ const firebaseConfig = {
+  apiKey: "AIzaSyD3AG2nSXkKgnm3kWyZAbZia9WpC30kJdY",
+  authDomain: "g2g-project-3c9b6.firebaseapp.com",
+  projectId: "g2g-project-3c9b6",
+  storageBucket: "g2g-project-3c9b6.appspot.com",
+  messagingSenderId: "170750058207",
+  appId: "1:170750058207:web:dd694902809ce64853136a"
+ };
+
+
+ const app = initializeApp(firebaseConfig);
+
+
+ const db = getDatabase(app);
+  
+  
+  document.getElementById("submit").addEventListener('click', function(e){
+   e.preventDefault();
+   set(ref(db, 'user/' + document.getElementById("username").value),
+   {
+
+     username: document.getElementById("username").value,
+     email: document.getElementById("email").value,
+     password: document.getElementById("password").value,
+     confirmPass: document.getElementById("confirm-password").value
+
+   });
+     alert("Login Sucessfull  !");
+  })
+</script>
 </body>
+
 </html>
