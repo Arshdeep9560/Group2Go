@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="hotelcss.css">
+  <title>Jaipur Trip</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-image: url();
+    color: #000000;
+    text-align: center;
+    padding: 50px;
+}
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header p {
+    margin-top: 5px;
+  }
+  
+  .hero-section img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .features-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    
+
+  }
+  
+  .feature {
+    text-align: center;
+    
+  }
+  
+  .feature img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+</style>
+<body>
+
+    <header>
+        <pre style="text-align: center; font-size: 30px; font-family: 'Times New Roman', Times, serif; background-color: burlywood;"><b>The Total number of people chosen the package is:</b>
+            
+            <div id="counter">0</div>
+        </pre>
+        <h1 style="font-size: 50px;">Sight Seeing</h1>
+        <pre style="text-align: center; font-size: 30px; font-family: 'Times New Roman', Times, serif;">We include various adventurous sports like some of the mentioned below.
+             Activities are modifiable according to your interest.
+        </pre>
+        
+      </header>
+    
+    
+    
+      <section class="features-section">
+        <div class="feature">
+          <img src="https://blog.thomascook.in/wp-content/uploads/2018/03/water-3154953_960_720-e1520683708240.jpg" alt="Icon 1">
+          <h2>Jal Mahal</h2>
+          <pre style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Jal Mahal, meaning "Water Palace,"
+         is a mesmerizing architectural gem located in the middle of Man Sagar Lake in Jaipur.
+            Renowned for its stunning setting amidst the serene lake,
+            Jal Mahal appears partially submerged in water during the monsoon season.</pre>
+        </div>
+    
+        <div class="feature">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuDD8CIjBDuVukV24jBDSDnW6-DUu3qrzpeQ&usqp=CAU">
+          <h2>Hawa Mahal</h2>
+          <pre style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Hawa Mahal, located in the heart of Jaipur, India, 
+            is a captivating architectural marvel known 
+            as the "Palace of Winds." </pre>
+        </div>
+    
+        <div class="feature">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4UyVLVs2aMLEM1gy58OyFmqwk51dxW_qfog&usqp=CAU" alt="Icon 3">
+          <h2>Jantar Mantar</h2>
+          <pre style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">The site features large-scale instruments, including sundials, 
+            giant astrolabes, and massive structures designed for specific
+             astronomical calculations. Each instrument is meticulously crafted 
+             and strategically positioned to measure time, predict eclipses, and 
+             determine the position of stars and planets.</pre>
+        </div>
+      </section>
+
+
+  <header>
+    <h1 style="font-size: 50px;">Hotel Stays</h1>
+    <p>Your Ultimate Destination for Luxury</p>
+  </header>
+
+<pre style="text-align: center; font-size: 30px; font-family: 'Times New Roman', Times, serif;">We're providing the best ever deals for you.
+    The hotel <b>RADDISON BLUE</b> is the great choice for your comfortable
+    stay in manali. We assure you the best ever reliable stays in manali. 
+</pre>
+
+  <section class="features-section">
+    <div class="feature">
+      <img src="https://images.rosewoodhotels.com/is/image/rwhg/hi-hgv-26330925-rhgmodelbedroom-1" alt="Icon 1">
+      <h2>Luxurious Rooms</h2>
+      <pre style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Experience comfort and elegance
+in our beautifully designed rooms.</pre>
+    </div>
+
+    <div class="feature">
+      <img src="https://tuvanahotel.com/wp-content/uploads/2016/07/Seraser-Fine-Dining-Restaurant-1.jpg" alt="Icon 2">
+      <h2>Fine Dining</h2>
+      <pre style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Indulge in a culinary delight with our
+ exquisite dining options.</pre>
+    </div>
+
+    <div class="feature">
+      <img src="https://premierpoolsandspas.com/wp-content/uploads/2018/10/Pool-Kings-Facebook-Ads-5.jpg" alt="Icon 3">
+      <h2>Pool and Spa</h2>
+      <pre style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Relax and rejuvenate with our refreshing
+        pool and spa facilities.</pre>
+    </div>
+  </section>
+  <button class="buyButton" onclick="increaseCount()"><a href="pay.html"></a>Buy Now</button>
+  <style>.buyButton {
+    margin-top: 1rem;
+    display: inline-block;
+    border: 0.2rem solid black;
+    color: black;
+    cursor: pointer;
+    background: none;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    border-radius: 40px;
+    justify-content: center;
+  }
+  .buyButton:hover {
+    background: blue;
+    color: white;
+  }</style>
+  <script>
+    var count = 0;
+
+    function increaseCount() {
+         if (count<=9)
+         {count++;
+            document.getElementById('counter').innerText = count;}
+            else{
+                alert("The Group is full");
+            }
+        
+    }
+</script>
+<br>
+<button class="buyButton"><a href="pay.html">PROCEED TO PAYMENT</a></button>
+<style>
+.buyButton {
+    margin-top: 1rem;
+    display: inline-block;
+    border: 0.2rem solid black;
+    color: black;
+    cursor: pointer;
+    background: none;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    border-radius: 40px;
+    justify-content: center;
+  }
+  .buyButton:hover {
+    background: blue;
+    color: white;
+  }
+  </style>
+  
+
+</body>
+</html>

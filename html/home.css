@@ -1,4 +1,24 @@
 home.css
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  padding: 10px;
+  text-align: right;
+}
+
+.profile-icon {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+/* If using Font Awesome icons, include the link in your HTML file */
+/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /> */
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
